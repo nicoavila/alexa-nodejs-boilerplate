@@ -1,0 +1,37 @@
+service: alexa-nodejs-boilerplate
+
+provider:
+  name: aws
+  runtime: nodejs10.x,
+  stage: dev
+  region: ${file(./environment.json):AWS_REGION}
+
+#Configuration
+custom:
+  alexa:
+    vendorId: ${file(./environment.json):AMAZON_VENDOR_ID}
+    clientId: ${file(./environment.json):AMAZON_DEVELOPER_CLIENT_ID}
+    clientSecret: ${file(./environment.json):AMAZON_DEVELOPER_SECRET}
+    localServerPort: 9000
+    skills:
+      - id: ${file(./environment.json):ALEXA_SKILL_ID}
+        manifest:
+          manifestVersion: '1.0'
+          publishingInformation:
+            locales:
+              es-MX:
+                name: ${file(./environment.json):ALEXA_SKILL_NAME}
+          apis:
+            custom:
+              endpoint:
+                uri: ${file(./environment.json):AWS_LAMDA_FUNCTION_ARN}   
+        models:
+          es-MX: 
+            ${file(./alexa-model.yml)}
+
+functions:
+  handler:
+    handler: src/handler.handler
+
+plugins:
+  - serverless-alexa-skills

@@ -1,0 +1,28 @@
+interactionModel:
+  languageModel:
+    invocationName: hacktoberfest chile
+    intents:
+    - name: AMAZON.CancelIntent
+      samples:
+      - Cancela
+      - Cancelar
+      - Parar
+      - Salir
+    - name: AMAZON.HelpIntent
+      samples:
+      - Ayudame
+      - Puedes ayudarme
+      - Ayuda
+      - Que puedo preguntar
+      - Que cosas puedo preguntar
+    - name: AMAZON.StopIntent
+      samples:
+      - Cerrar
+    - name: AMAZON.NavigateHomeIntent
+      samples: []
+    - name: GetInfo
+      samples:
+      - Saluda a la audiencia
+      - Saluda a las personas
+      - Saluda a los asistentes
+      - Salúdame

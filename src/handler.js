@@ -1,5 +1,7 @@
 'use strict';
 
+const Alexa = require('ask-sdk');
+
 module.exports.hello = async event => {
   return {
     statusCode: 200,

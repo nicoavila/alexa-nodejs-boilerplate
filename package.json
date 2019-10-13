@@ -2,8 +2,11 @@
   "name": "alexa-nodejs-boilerplate",
   "description": "",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "ask-sdk": "^2.7.0"
+  },
   "devDependencies": {
+    "husky": "^3.0.9",
     "serverless-alexa-skills": "^0.1.0"
   }
 }

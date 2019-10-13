@@ -33,10 +33,10 @@ Este proyecto pretende entregar una estructura prefabricada para construir [Alex
 
 
 ## Estructura de proyecto: Archivos importantes
-* ```environment.json```: Lorem 
-* ```alexa-model.yml```: Lorem
-* ```serverless.yml```: Lorem
-* ```handler.js```: Lorem
+* ```environment.json```: Archivo que almacena todas las variables importantes del proyecto, tales como credenciales de Amazon Developers, ID de Skill de Allexa y otros.
+* ```alexa-model.yml```: Modelo de interacción de la Skill de Alexa.
+* ```serverless.yml```: Descripción del service de Serverless Framework.
+* ```handler.js```: Lógica de la Skill Custom.
 
 ## Pre-requisitos
 1. [Node Version Manager](https://github.com/nvm-sh/nvm)
@@ -46,13 +46,13 @@ Este proyecto pretende entregar una estructura prefabricada para construir [Alex
 ## Configuración
 
 ### Amazon Web Services: AWS IAM Credentials
-1. El primer paso es crear un
+1. (TO-DO)
 
 ### Amazon Developers: Configuración de Security Profile
-3. Obtener tu **Amazon Vendor ID** [aquí](https://developer.amazon.com/settings/console/mycid)
+1. Obtener tu **Amazon Vendor ID** [aquí](https://developer.amazon.com/settings/console/mycid)
 
 ### Serverless: Configuración de credenciales AWS
-1. Lorem
+1. (TO-DO)
 
 ## Pasos
 1. Clonar el repositorio en tu computador.

@@ -1,0 +1,11 @@
+{
+    "AMAZON_VENDOR_ID": "",
+    "AMAZON_DEVELOPER_CLIENT_ID": "",
+    "AMAZON_DEVELOPER_SECRET": "",
+    "AWS_REGION": "us-west-2",
+    "AWS_LAMDA_FUNCTION_ARN": "",
+    "ALEXA_SKILL_ID": "",
+    "ALEXA_SKILL_NAME": "HacktoberfestChile",
+    "ALEXA_SKILL_LOCALE": "es-MX",
+    "ALEXA_SKILL_TYPE": "custom"
+}
